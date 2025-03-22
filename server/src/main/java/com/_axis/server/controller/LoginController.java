@@ -14,7 +14,7 @@ public class LoginController {
     @Autowired
     private LoginService loginService;
 
-    @GetMapping("/login")
+    @PutMapping("/login")
     public Response login(@RequestBody LoginRequest loginRequest){
         return loginService.login(loginRequest);
 
