@@ -41,3 +41,22 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.error {
+    color: red;  /* Error messages will appear in red */
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: block;  /* Ensures error messages are displayed block-wise */
+}
+
+.checkbox-label {
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#togglePassword {
+    margin-right: 8px;
+    vertical-align: middle;
+}

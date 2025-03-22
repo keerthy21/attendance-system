@@ -13,7 +13,17 @@
         <h1>Attendance System</h1><h2>Login</h2>
         <form id="loginForm">
             <input type="text" id="username" placeholder="Username" required><br>
+            <small id="usernameError" class="error"></small><br>
+
             <input type="password" id="password" placeholder="Password" required><br>
+            <!-- Error message will be shown here for invalid password -->
+            <small id="passwordError" class="error"></small><br>
+        
+            <!-- Show/Hide Password checkbox (styled like a radio button) -->
+            <label for="togglePassword" class="checkbox-label">
+                <input type="checkbox" id="togglePassword"> Show Password
+            </label><br>
+
             <button type="submit">Login</button>
         </form>
     </div>
