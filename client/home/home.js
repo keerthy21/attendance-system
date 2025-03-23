@@ -15,6 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
         } catch (error) {
             console.error('Error decoding token:', error);
         }
+         // Logout functionality
+       logoutButton.addEventListener('click', function () {
+        // Remove the token from localStorage
+        localStorage.removeItem('token');
+
+        // Show logout success message
+        logoutMessage.textContent = 'You have successfully logged out.';
+        logoutMessage.style.display = 'block'; // Show the message
+
+        // Redirect to the login page after 2 seconds
+        setTimeout(function () {
+            window.location.href = "../login/login.html"; // Redirect to login page
+        }, 2000); // Delay before redirect
+    });
+
     }
 
+      
+
 });
+
