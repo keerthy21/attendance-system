@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f9;
     margin: 0;
 }
+
 .container {
     background-color: #ffffff;
     padding: 40px;
@@ -15,11 +16,14 @@ body {
     width: 350px;
     text-align: center;
 }
+
 h2 {
     margin-bottom: 20px;
     color: #333;
 }
-input[type="text"], input[type="password"] {
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -27,6 +31,7 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 button {
     width: 100%;
     background-color: #4CAF50;
@@ -38,16 +43,19 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
 button:hover {
     background-color: #45a049;
 }
 
 .error {
-    color: red;  /* Error messages will appear in red */
+    color: red;
+    /* Error messages will appear in red */
     font-size: 0.9em;
     margin-top: -8px;
     margin-bottom: 10px;
-    display: block;  /* Ensures error messages are displayed block-wise */
+    display: block;
+    /* Ensures error messages are displayed block-wise */
 }
 
 .checkbox-label {

@@ -1,6 +1,4 @@
-package com._axis.server.model;
-
-import org.springframework.web.bind.annotation.RequestBody;
+package com._axis.server.dto;
 
 public class LoginRequest {
     private String username;

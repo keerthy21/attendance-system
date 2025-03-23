@@ -1,7 +1,7 @@
 package com._axis.server.controller;
 
-import com._axis.server.model.LoginRequest;
-import com._axis.server.model.Response;
+import com._axis.server.dto.LoginRequest;
+import com._axis.server.dto.Response;
 import com._axis.server.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,14 +15,10 @@ public class LoginController {
     private LoginService loginService;
 
     @PutMapping("/login")
-    public Response login(@RequestBody LoginRequest loginRequest){
+    public Response login(@RequestBody LoginRequest loginRequest) {
         return loginService.login(loginRequest);
 
     }
-
-
-
-
 
 
 }

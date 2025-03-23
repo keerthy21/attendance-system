@@ -1,4 +1,4 @@
-package com._axis.server.model;
+package com._axis.server.dto;
 
 public class Response {
 

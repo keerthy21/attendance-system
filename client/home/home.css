@@ -11,7 +11,8 @@ body {
 }
 
 /* Login Container */
-.login-container, .welcome-container {
+.login-container,
+.welcome-container {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 15px;
@@ -19,7 +20,8 @@ body {
     text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #333;
 }
 
