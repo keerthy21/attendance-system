@@ -1,7 +1,10 @@
 const apiUrl = 'http://localhost:8080/api';  // Replace this with your actual API URL
+const token = localStorage.getItem('token');
+
 
 async function login(apiUrl, username, password) {
     try {
+
         console.log("testing2")
 
         const response = await fetch(`${apiUrl}/login`, {
@@ -107,3 +110,13 @@ document.getElementById('togglePassword').addEventListener('change', function ()
         passwordField.type = 'password'; // Hide password
     }
 });
+
+//redirect to home page if token available
+document.addEventListener("DOMContentLoaded", function () {
+    if (token) {
+        window.location.href = "../home/home.html";  // Redirect to home page
+
+    }
+}
+
+)
