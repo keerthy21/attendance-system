@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2000); // Delay before redirect
     });
 
+    }else{
+         window.location.href = "../login/login.html";  // Redirect to login page
+        
     }
 
       
